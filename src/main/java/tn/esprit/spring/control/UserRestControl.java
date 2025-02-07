@@ -18,7 +18,7 @@ public class UserRestControl {
 	IUserService userService; 
 
 	
-	// URL : http://localhost:????/????/????/retrieve-all-user
+	// URL : http://localhost:????/????/????/retrieve-all-users
 	@GetMapping("/retrieve-all-users")
 	public List<User> retrieveAllUsers() {
 		return userService.retrieveAllUsers();
@@ -52,7 +52,8 @@ public class UserRestControl {
 	// http://localhost:????/timesheet-devops/modify-user 
 	@PutMapping("/modify-user") 
 	public User updateUser(@RequestBody User user) {
-		return userService.updateUser(user);}
-	
+		return userService.updateUser(user);
+	}
+	 
 } 
  
