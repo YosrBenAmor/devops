@@ -53,7 +53,6 @@ public class UserRestControl {
 	@PutMapping("/modify-user") 
 	public User updateUser(@RequestBody User user) {
 		return userService.updateUser(user);
-	}
-	 
+	
 } 
  
