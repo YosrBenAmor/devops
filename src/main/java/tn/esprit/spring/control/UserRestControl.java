@@ -52,7 +52,7 @@ public class UserRestControl {
 	// http://localhost:????/timesheet-devops/modify-user 
 	@PutMapping("/modify-user") 
 	public User updateUser(@RequestBody User user) {
-		return userService.updateUser(user);
+		return userService.updateUser(user);}
 	
 } 
  
